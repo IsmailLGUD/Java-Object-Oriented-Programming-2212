@@ -5,7 +5,7 @@ class Fruits{
 	String name;
 	String color;
 	boolean isFruit;
-	String taste;
+	String taste = "sweet";
 	
 	Fruits(){
 		//default constructor
@@ -20,7 +20,7 @@ class Fruits{
 
 	@Override
 	public String toString() {
-		return "Fruits number is " + num + " and color is " + color+ ".";
+		return "Fruits number is " + num + " and color is " + color+ " taste = " + taste+ ".";
 	}
 	
 }
@@ -32,6 +32,7 @@ public class ToString {
 		Fruits f1 = new Fruits(6, "orange");
 		System.out.println(f1);
 		System.out.println(f1.color);
+		//System.out.println(taste);
 
 
 	}
